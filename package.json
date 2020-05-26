@@ -5,7 +5,8 @@
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
-    "eject": "expo eject"
+    "eject": "expo eject",
+    "test": "jest"
   },
   "dependencies": {
     "expo": "~37.0.3",
@@ -15,8 +16,20 @@
     "react-native-web": "~0.11.7"
   },
   "devDependencies": {
+    "@babel/core": "^7.8.6",
+    "babel-eslint": "^10.1.0",
     "babel-preset-expo": "~8.1.0",
-    "@babel/core": "^7.8.6"
+    "eslint": "^7.1.0",
+    "eslint-config-codingitwrong": "^0.1.4",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-jest": "^23.13.1",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.20.0",
+    "jest-expo": "^37.0.0",
+    "react-native-testing-library": "^1.14.0"
+  },
+  "jest": {
+    "preset": "jest-expo"
   },
   "private": true
 }
